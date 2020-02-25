@@ -1,31 +1,31 @@
-## What
+# What
 
 Shell helpers to use the [TransIP REST API](https://www.transip.eu/transip/api/).
 
-## Tools
+# Tools
 
-### fetch-token.sh
+## fetch-token.sh
 
-#### Dependencies
+### Dependencies
 
 - `getopt`
 - `curl`
 - `openssl`
 - `base64`
 
-#### Usage
+### Usage
 
 ```sh
 ./fetch-token.sh -u example -g -e '1 hour' -k mykey.pem
 ```
 
-### dynamic-dns.sh
+## dynamic-dns.sh
 
-#### Dependencies
+### Dependencies
 
 - `fetch-token.sh`
 
-#### Usage
+### Usage
 
 ```sh
 TRANSIP_API_KEY_FILE=mykey.pem TRANSIP_API_USER=transipdemo DYNAMIC_DNS_DOMAIN=example.com DYNAMIC_DNS_NAME=subdomain ./dynamic-dns.sh
